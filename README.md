@@ -1,5 +1,7 @@
-AtliQO Bank: Credit Card Launch Analysis and A/B Testing
-Project Overview
+#AtliQO Bank: Credit Card Launch Analysis and A/B Testing
+
+
+**Project Overview**
 AtliQO Bank aims to expand its market share by launching a new credit card. The objective of this project was to analyze customer demographics and spending patterns to identify a high-potential "Untapped Market" and validate the launch strategy using statistical methods.
 
 Phase 1: Data Cleaning and Preparation
