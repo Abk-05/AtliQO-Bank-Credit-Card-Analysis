@@ -1,53 +1,85 @@
-#AtliQO Bank: Credit Card Launch Analysis and A/B Testing
+# AtliQO Bank: Credit Card Launch Analysis and A/B Testing
 
+### **Project Overview**
+AtliQO Bank aims to expand its market share by launching a new credit card. The objective of this project was to analyze customer demographics and spending patterns to identify a high-potential **"Untapped Market"** and validate the launch strategy using statistical methods.
 
-**Project Overview**
-AtliQO Bank aims to expand its market share by launching a new credit card. The objective of this project was to analyze customer demographics and spending patterns to identify a high-potential "Untapped Market" and validate the launch strategy using statistical methods.
+---
 
-Phase 1: Data Cleaning and Preparation
+### **Phase 1: Data Cleaning and Preparation**
 The raw data contained several inconsistencies that required careful handling before analysis:
 
-Age Filtering: Restructured the dataset to include only valid age groups between 18 and 64 years.
+* **Age Filtering:** Restructured the dataset to include only valid age groups between **18 and 64 years**
 
-Handling Invalid Transactions: Identified over 4,700 transactions with a zero value in the Electronics category. These were corrected using the Median value of similar transactions to maintain data integrity.
+* **Handling Invalid Transactions:** Identified over **4,700 transactions** with a zero value in the Electronics category. These were corrected using the **median** value of similar transactions
 
-Outlier Treatment: Implemented the Interquartile Range (IQR) method to detect and handle extreme transaction amounts that could have skewed the final results.
+* **Outlier Treatment:** Applied the **Interquartile Range (IQR)** method to handle extreme spending values and prevent skewed analysis
 
-Phase 2: Exploratory Data Analysis (EDA) and Key Discovery
-By visualizing the cleaned data, a significant business opportunity was identified within the 18-25 age group:
+---
 
-Market Share: This segment represents approximately 26% of the total customer base.
+### **Phase 2: Key Insights and Market Opportunity**
 
-Spending Habits: High engagement was observed in Electronics, Fashion, and Beauty categories.
+After cleaning the data, important patterns emerged:
 
-The Opportunity: Despite their high spending, this group had the lowest credit card penetration, making them the ideal target for a new product.
+* The **18–25 age group** represents approximately **26 percent** of the total customer base
 
-Phase 3: A/B Testing Framework
-To validate the business hypothesis, a controlled experiment was conducted over a two-month period:
+* This segment shows high spending in:
+  * Electronics
+  * Fashion
+  * Beauty
 
-Control Group: 40 customers continuing with existing payment methods.
+* However, this group has the **lowest credit card penetration** within the bank
 
-Test Group: 40 customers provided with the new Trial Credit Card.
+**Strategy:** A targeted credit card offering was proposed specifically for the **18–25 segment**
 
-Conversion Metric: The trial achieved a 40% conversion rate, indicating strong interest from the target demographic.
+---
 
-Phase 4: Statistical Validation (Hypothesis Testing)
-To ensure the results were not due to random chance, a Two-Sample Z-Test was performed on the transaction amounts:
+### **Phase 3: A/B Testing Strategy**
 
-Z-Statistic: 2.76
+To evaluate the effectiveness of the new credit card, a controlled experiment was designed:
 
-Critical Z-Value: 1.64 (at 5% significance level)
+* **Control Group (40 customers):** Continued using existing payment methods
 
-P-Value: 0.0
+* **Test Group (40 customers):** Provided with the new trial credit card
 
-Decision: Since the Z-score (2.76) is significantly higher than the Critical Value (1.64), we reject the Null Hypothesis.
+**Result:** The experiment resulted in a **40 percent conversion rate**, indicating strong customer interest
 
-Final Conclusion and Recommendation
-The statistical evidence confirms that the new credit card significantly increased the average transaction amount for the 18-25 age group. Based on these findings, it is recommended that AtliQO Bank proceeds with a full-scale launch of the credit card tailored for young professionals and students.
+---
 
-Tech Stack
-Language: Python
+### **Phase 4: Statistical Validation**
 
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Statsmodels
+A **Two-Sample Z-Test** was conducted:
 
-Methodologies: Data Cleaning, EDA, Hypothesis Testing, A/B Testing
+* **Z-Statistic:** 2.76
+* **Critical Value:** 1.64
+* **P-Value:** 0.0
+
+**Decision:** Since the Z-Statistic is greater than the Critical Value, the null hypothesis is rejected. This confirms that the new credit card significantly increased customer spending
+
+---
+
+### **Final Conclusion**
+
+The analysis demonstrates that the **18–25 age group** is a high-potential segment. Targeting this segment is both a strategic and statistically validated decision
+
+A full-scale launch of the credit card is recommended
+
+---
+
+### **Tech Stack and Methodology**
+
+**Language**
+* Python
+
+**Libraries**
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Statsmodels
+
+**Skills**
+* Data Cleaning
+* Exploratory Data Analysis
+* Hypothesis Testing
+* A/B Testing
+* Business Intelligence
