@@ -48,4 +48,4 @@ Language: Python
 
 Libraries: Pandas, NumPy, Matplotlib, Seaborn, Statsmodels
 
-Methodologies: Data Cleaning, Exploratory Data Analysis, Hypothesis Testing, A/B Testing
+Methodologies: Data Cleaning, EDA, Hypothesis Testing, A/B Testing
